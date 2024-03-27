@@ -1,0 +1,11 @@
+Protocol:
+
+bit 1: start condition
+bit 2-8: target addr
+bit 9: r/w
+bit 10: ack
+bit 11-17: data size (n)
+bit 18: ack
+bit 19-19+n: data
+bit 19+n+1: ack
+bit 19+n+1: stop condition
